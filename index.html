@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 SHAZAM 🔥 - Kraft Land FF</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="titulo-principal" class="titulo-rgb">🔥 SHAZAM 🔥</h1>
+            <p id="meu-nome" class="nome-admin">jandesom28-sudo</p>
+        </header>
+
+        <div id="itens-container" class="itens-grid"></div>
+
+        <div id="painel-admin" class="painel-admin" style="display: none;">
+            <div class="painel-conteudo">
+                <h2>PAINEL ADMIN</h2>
+                
+                <div class="form-grupo">
+                    <label>Título:</label>
+                    <input type="text" id="input-titulo" placeholder="Digite o título">
+                </div>
+
+                <div class="form-grupo">
+                    <label>Descrição:</label>
+                    <textarea id="input-descricao" placeholder="Digite a descrição"></textarea>
+                </div>
+
+                <div class="form-grupo">
+                    <label>Link do Vídeo (YouTube/TikTok):</label>
+                    <input type="text" id="input-video" placeholder="Cole o link do vídeo">
+                </div>
+
+                <div class="form-grupo">
+                    <label>Código:</label>
+                    <input type="text" id="input-codigo" placeholder="Digite o código">
+                </div>
+
+                <div class="form-grupo">
+                    <label>Foto:</label>
+                    <input type="file" id="input-foto" accept="image/*">
+                    <div id="preview-foto" class="preview-foto"></div>
+                </div>
+
+                <div class="botoes-admin">
+                    <button id="btn-adicionar" class="btn-admin">➕ ADICIONAR</button>
+                    <button id="btn-publicar" class="btn-publicar">💾 PUBLICAR</button>
+                </div>
+
+                <button id="btn-sair-admin" class="btn-sair">🚪 SAIR</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="som-acesso" preload="auto">
+        <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
